@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body,html{
+    background-color: rgba(17, 16, 16, 0.87);
+    height: 100vh;
+    width: 100vw;
+
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.login{
+    background-color: blanchedalmond;
+    position: absolute;
+
+    width: 550px;
+    border-radius: 20px;
+
+    top: 
+    15%;
+    left: 5%;
+
+    border: 3px solid brown;
+    overflow: hidden;
+    transition: width .3s ease, height .3s ease;
+
+}
+
+.baixo{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+}
+
+.imagem img{
+    width: 100%;
+    display: block;
+}
+
+.imagem {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 500px){
+
+        .login{
+        position: relative;
+
+        width: 90vw;
+
+        left: 50%;
+        top: 20px;
+
+        transform: translateX(-50%);
+    }
+
+    .limagem{
+        display: none;
+    }
+
+
+}
+
+div#cabecalho > p{
+    font-size: 0.8em;
+}
+
+.campo{
+    background-color: brown;
+    border: 2px solid rgb(0, 0, 0);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+.campo > label{
+    display: none;
+}
+
+.campo > i{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo > input{
+    background-color: black;
+    color: white;
+
+    width: calc(100% - 45px);
+    height: 85%;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-14px);
+
+}
+
+hr{
+    border: none;
+
+    height: 2px;
+
+    background-color: brown;
+
+    margin: 10px 0;
+}
+
+#submit{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+#submit:hover{
+
+    background-color: rgb(165, 42, 42);
+
+    transform: scale(1.03);
+
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+}
+
+a{
+    display: inline-block;
+    
+    padding: 5px 10px;
+    border-radius: 8px;
+
+    transition: 
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+a:hover{
+    background-color: brown;
+    color: white;
+
+    transform: scale(1.1);
+
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+}
+
+.limagem{
+    position: absolute;
+    right: 18%;
+    top: 50%;
+
+    transform: translateY(-50%);
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+.limagem img{
+    width: 400px;
+}
+
+@keyframes flutuar{
+
+    0%{
+        transform: translateY(-50%) translateX(0px);
+    }
+
+    50%{
+        transform: translateY(-55%) translateX(0px);
+    }
+
+    100%{
+        transform: translateY(-50%) translateX(0px);
+    }
+
+}
